@@ -123,6 +123,29 @@ input[type="text"]:focus {
   background: #181b22;
 }
 
+input[type="number"] {
+  background: #15171c;
+  border: 1px solid #2f3545;
+  color: #e2e6f3;
+  padding: 7px 11px;
+  border-radius: 4px;
+  min-width: 220px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+input[type="number"]::placeholder {
+  color: #6c7385;
+  font-size: 12px;
+}
+
+input[type="number"]:focus {
+  border-color: #4f8bff;
+  box-shadow: 0 0 0 1px rgba(79, 139, 255, 0.4);
+  background: #181b22;
+}
 /* -------------------------------------------------- */
 /*  BUTON STİLLERİ (GENEL)                            */
 /* -------------------------------------------------- */
@@ -198,6 +221,9 @@ form button[type="button"]:hover {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
+.error{
+  color: red;
+}
 /* -------------------------------------------------- */
 /*  RESPONSIVE - FORM DİKEY YERLEŞİM (MOBİL)          */
 /* -------------------------------------------------- */

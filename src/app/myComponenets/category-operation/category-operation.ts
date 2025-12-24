@@ -16,8 +16,6 @@ import { updateCategoryForm,toUpdateCategoryRequest } from '../../Valications/Ca
 })
 export class CategoryOperation implements OnInit {
 
-  
-
   private categoryApi = inject(CategoryApi);
   protected categories = signal<CategoryResponseModel[]>([]);
   protected selectedCategory = signal<CategoryResponseModel|null>(null);
