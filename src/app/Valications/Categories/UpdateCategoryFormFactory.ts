@@ -30,7 +30,7 @@ export function updateCategoryForm(){
 
     return new FormGroup({
         id:new FormControl(0, {validators: [Validators.required,Validators.min(1)],
-
+            nonNullable: true
         }),
         ...base,
     });
